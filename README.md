@@ -1,4 +1,4 @@
-# Project2-DynamicServer
+# US Energy Consumption
 
 Dynamic server that displays 3 different charts of consumptions for
 every state in the US.
