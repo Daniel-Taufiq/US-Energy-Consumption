@@ -13,12 +13,16 @@
         },
         {}
     ],
+    "scripts": {
+        "start": "node server.js"
+    },
     "main": "server.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/98tmurphy/Project2-DynamicServer"
     },
     "dependencies": {
+        "dotenv": "^10.0.0",
         "express": "^4.17.1",
         "sqlite3": "^4.1.0"
     }

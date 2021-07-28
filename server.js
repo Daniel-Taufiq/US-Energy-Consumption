@@ -1,6 +1,7 @@
 // Built-in Node.js modules
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config();
 
 // NPM modules
 const express = require('express');
@@ -11,7 +12,7 @@ const template_dir = path.join(__dirname, 'templates');
 const db_filename = path.join(__dirname, 'db', 'usenergy.sqlite3');
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 3000;
 
 // open usenergy.sqlite3 database
 const db = new sqlite3.Database(db_filename, sqlite3.OPEN_READONLY, err => {
